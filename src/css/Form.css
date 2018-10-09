@@ -1,0 +1,51 @@
+.Form.box {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box {
+  padding: 1.5rem;
+  min-height: 30vh;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.03);
+  border-radius: 4px;
+  background: #fff;
+  border-bottom: 1px solid #F9F2D6;
+  border-right: 1px solid #F9F2D6;
+}
+label {
+  text-align: center;
+  width: 100%;
+  display: inline-grid;
+
+}
+input {
+  min-width: 200px;
+
+}
+textarea {
+  outline: none;
+  resize: none;
+  overflow: auto;
+  vertical-align: middle;
+}
+input, textarea {
+  padding: 0.5rem;
+  border: 1px solid #eee;
+  border-left: 3px solid;
+  border-radius: 5px;
+  transition: border-color .5s ease-out;
+}
+label, input, textarea {
+  margin: 0 .25rem;
+}
+label span {
+  line-height: 6rem;
+}
+input:required {
+  border-left-color: palegreen;
+}
+input:optional, textarea{
+  border-left-color: #999;
+}
+
