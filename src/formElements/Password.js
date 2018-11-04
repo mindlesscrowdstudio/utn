@@ -6,7 +6,7 @@ var Password = (props) => {
     <div>
       <label>
         Password
-        <input id="password" type="password" name="password" placeholder= {props.placeholder} autoComplete="true" required />
+        <input id="password" type={props.type} name={props.name} placeholder= {props.placeholder} autoComplete="true" onChange={props.handleChange} required />
       </label>
     </div>
   )

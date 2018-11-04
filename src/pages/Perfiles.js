@@ -12,7 +12,7 @@ class Perfiles extends Component {
       perfiles: [],
     }
   }
-  componentWillMount() {
+  componentDidMount() {
     //let url1 = 'https://jsonplaceholder.typicode.com/users'
     let url2 = 'https://randomuser.me/api/?page=1&results=16&nat=es'
     fetch(url2)

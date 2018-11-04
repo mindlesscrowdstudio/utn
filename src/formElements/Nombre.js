@@ -6,12 +6,13 @@ import './../css/Form.css';
  *
  * var Nombre = function() {}
  */
-var Nombre = (props) => {
+const Nombre = (props) => {
   return (
     <div>
     <label>
       Nombre
-      <input id="nombre" name="nombre" type="text" placeholder ={props.placeholder} required/>
+      <input id="nombre" type={props.type} name={props.name} placeholder ={props.placeholder}  value= {props.value} onChange={props.handleChange} required
+      />
     </label>
     </div>
   );
